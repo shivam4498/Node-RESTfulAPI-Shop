@@ -16,7 +16,10 @@ mongoose.connect('mongodb+srv://shivam_4498:'+ process.env.MONGO_ATLAS_PW +'@clu
 app.use(bodyparser.urlencoded({extended: false}));
 app.use(bodyparser.json());
 
-app.use((req,res, next)=>{
+
+
+
+app. use((req,res, next)=>{
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers","*");
     if(req.method==='OPTIONS'){

@@ -22,5 +22,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivam4498/Node-RESTfulAPI-Shop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shivam4498/Node-RESTfulAPI-Shop/issues"
+  },
+  "homepage": "https://github.com/shivam4498/Node-RESTfulAPI-Shop#readme"
 }
