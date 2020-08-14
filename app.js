@@ -6,15 +6,19 @@ const mongoose= require('mongoose');
 app.use(morgan('dev'));
 
 const ordersRoutes=require('./api/routes/orders')
-const productRoutes=require('./api/routes/products')
+const productRoutes=require('./api/routes/products');
+const userRoutes=require('./api/routes/user');
+const bodyParser = require('body-parser');
 
 mongoose.connect('mongodb+srv://shivam_4498:'+ process.env.MONGO_ATLAS_PW +'@cluster0.czo1u.mongodb.net/shivam_4498?retryWrites=true&w=majority',{
     useNewUrlParser: true, 
     useUnifiedTopology: true,  
     useCreateIndex: true
 })
+app.use('/uploads',express.static('uploads')); // this will made to upload folder public or available to take the data
 app.use(bodyparser.urlencoded({extended: false}));
 app.use(bodyparser.json());
+
 
 
 
@@ -29,6 +33,7 @@ app. use((req,res, next)=>{
 });
 app.use('/products',productRoutes);
 app.use('/orders',ordersRoutes);
+app.use('/user',userRoutes);
 app.use((req, res, next)=>{
     const error= new Error('Not found the request');
     error.status=400;
