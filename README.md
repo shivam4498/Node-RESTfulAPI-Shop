@@ -15,7 +15,7 @@
 * Now do the POST request for ```localhost:4000/user/login``` for same body and copy the *JWT* token from there.
 * Paste this JWT token to your header in **Authorization** (will use as a middleware to keep the safe requests).
 * As an owner to keep the product track Visit ```localhost:4000/products/ ```
-* As a Customer to place the orders Visit ```localhost:4000/products/```
+* As a Customer to place the orders Visit ```localhost:4000/orders/```
 
 
 **Note-** Just make sure that you have keep your Mongodb Atlas (to store the data) login password in any nodemon.json file and do same to keep your secret JWT string in it.
