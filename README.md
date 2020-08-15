@@ -63,7 +63,7 @@ Now install body-parser ```npm install --save body-parser```(Node.js body parsin
 
 * npm install jasonwebtoken
 
-##Contributing 
+## Contributing 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
